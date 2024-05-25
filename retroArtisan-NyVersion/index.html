@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro-Artisan</title>
+    <link rel="stylesheet" href="index.css"> <!-- Link till main stylesheet -->
+    <link rel="stylesheet" href="sidebar.css"> <!-- Link till sidebar stylesheet -->
+    <link rel="stylesheet" href="carousel.css"> <!-- Link till carousel stylsheet -->
+    <link rel="stylesheet" href="historia.css"> <!-- Link till carousel stylsheet -->
+    <link rel="stylesheet" href="speldesign.css"> <!-- Link till speldesign stylesheet -->
+    <link rel="icon" href="Icon.png" type="image/png"> <!-- Link till PNG favicon -->
+
+</head>
+<body>
+
+<div class="banner">
+    <img src="RetroArtisanBaner.png" alt="RETRO ARTISAN Baner Logo med Capybara">
+</div>
+
+<ul class="navbar">
+    <li><button class="openbtn" onclick="openNav()">☰ Meny</button></li>
+    <li><a class="active" href="index.html">Hem</a></li>
+    <li><a href="historia.html">Historia</a></li>
+    <li><a href="tekniker.html">Pixel Art Tekniker</a></li>
+    <li><a href="pixelArt.html">Pixel Art</a></li>
+    <li><a href="nivadesign.html">Nivådesign</a></li>
+    <li><a href="karak.html">Karaktärsdesign</a></li>
+    <li><a href="verktyg.html">Verktyg</a></li>
+    <li><a href="resurser.html">Resurser</a></li>
+</ul>
+
+<div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <li><a href="index.html">Hem</a></li>
+    <li><a href="historia.html">Historia</a></li>
+    <li><a href="tekniker.html">Pixel Art Tekniker</a></li>
+    <li><a href="pixelArt.html">Pixel Art</a></li>
+    <li><a href="nivadesign.html">Nivådesign</a></li>
+    <li><a href="karak.html">Karaktärsdesign</a></li>
+    <li><a href="verktyg.html">Verktyg</a></li>
+    <li><a href="resurser.html">Resurser</a></li>
+</div> 
+<div id="main">
+     
+
+    <div class="container">
+
+            
+        <h2>Välkommen till Retro-Artisan – din resurs för pixel art!</h2>
+
+        <p>Vi är glada att du har hittat hit och vi vill ta tillfället i akt att förklara varför denna sida existerar och vad du kan förvänta dig här.</p>
+
+        <br>
+
+        <div class="inner-container" id="innerContainer">
+            <a href="#Varför?" onclick="toggleParagraph()">Varför just denna sida? Läs mer!</a>
+            <div id="paragraph" class="hidden">
+                <p>Retro-Artisan föddes som ett skolprojekt, med ambitionen att inte bara berätta om pixel art utan också att erbjuda en plattform som hjälper och ger instruktioner för alla som är intresserade av detta fascinerande ämne.</p>
+                <p>Vårt syfte är att utbilda och inspirera både nybörjare och erfarna pixelkonstnärer genom att erbjuda en djupgående titt på pixelkonstens värld och dess tillämpning i spelutveckling.</p>
+                <p>Vårt mål är att nå en bred målgrupp som inkluderar spelare, konstnärer, designers och alla som delar vårt intresse för 2D-grafik och pixel art.</p>
+            </div>
+        </div>
+
+        <div class="slideshow-container">
+
+<div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <div class="slide-content">
+        <img src="BroforceArt.png" alt="Pixel konst från spelet Broforce">
+        <div class="text">Pixel konst från spelet Broforce</div>
+    </div>
+</div>
+
+<div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <div class="slide-content">
+        <img src="SkisarForPixel.png" alt="Förbredande skissar">
+        <div class="text">Förbredande skissar</div>
+    </div>
+</div>
+
+<div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <div class="slide-content">
+        <img src="PixelArtVerktyg.png" alt="Verktyg För PixelArt">
+        <div class="text">Verktyget för att få sina ider till verklighet</div>
+    </div>
+</div>
+
+</div>
+
+        <br>
+
+            <div style="text-align:center">
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+            </div>
+        
+        <br>
+
+        <div class="inner-container" id="innerContainer2">
+            <a href="#Vad?" onclick="togglePopup()">Vad kan du förvänta dig? Läs mer!</a>
+            <div id="popupContent" class="hidden">
+                <p>På Retro-Artisan hittar du allt från introduktioner till avancerade tekniker inom pixel art till fördjupade analyser av spel som Broforce, som använder pixel art som sin huvudsakliga estetik.</p> 
+                <p>Vi strävar efter att erbjuda omfattande resurser och praktiska handledningar för att hjälpa dig att vässa dina färdigheter och utforska ditt kreativa uttryck.</p> 
+                <p>Dessutom är vi stolta över att erbjuda allt detta på ett etiskt och lagligt sätt, med respekt för upphovsrätten och användarintegriteten.</p>
+            </div>
+        </div>
+
+        <br>
+
+        <div>
+            <h2>Här är ett formulär som du kan fylla i efter dagens kurser!</h2>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeNSMFcmt2GaVTdeDPcXxn1SUr-kRb54n57hp89gAqrD6GwZQ/viewform?usp=sf_link" width="640" height="1048" frameborder="0" marginheight="0" marginwidth="0">Läser in …</iframe>
+        </div>
+
+    </div>
+        
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <p>Ansvarig utgivare: Kacper Ertmanski</p>
+            <p>Senast uppdaterad: 2024-05</p>
+            <p>E-mail: 05kacert@skola.boras.se</p>
+        </div>
+    </div>
+</footer>
+
+<script src="index.js"></script>
+</body>
+</html>

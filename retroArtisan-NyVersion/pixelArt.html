@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speldesign - Retro-Artisan</title>
+    <link rel="stylesheet" href="index.css"> <!-- Link till main stylesheet -->
+    <link rel="stylesheet" href="sidebar.css"> <!-- Link till sidebar stylesheet -->
+    <link rel="stylesheet" href="carousel.css"> <!-- Link till carousel stylsheet -->
+    <link rel="stylesheet" href="historia.css"> <!-- Link till carousel stylsheet -->
+    <link rel="stylesheet" href="speldesign.css"> <!-- Link till speldesign stylesheet -->
+    <link rel="icon" href="Icon.png" type="image/png"> <!-- Link till PNG favicon -->
+</head>
+<body>
+
+<div class="banner">
+    <img src="RetroArtisanBaner.png" alt="RETRO ARTISAN Baner Logo med Capybara">
+</div>
+
+<ul class="navbar">
+    <li><button class="openbtn" onclick="openNav()">☰ Meny</button></li>
+    <li><a href="index.html">Hem</a></li>
+    <li><a href="historia.html">Historia</a></li>
+    <li><a href="tekniker.html">Pixel Art Tekniker</a></li>
+    <li><a class="active" href="pixelArt.html">Pixel Art</a></li>
+    <li><a href="nivadesign.html">Nivådesign</a></li>
+    <li><a href="karak.html">Karaktärsdesign</a></li>
+    <li><a href="verktyg.html">Verktyg</a></li>
+    <li><a href="resurser.html">Resurser</a></li>
+</ul>
+
+<div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <li><a href="index.html">Hem</a></li>
+    <li><a href="historia.html">Historia</a></li>
+    <li><a href="tekniker.html">Pixel Art Tekniker</a></li>
+    <li><a href="pixelArt.html">Pixel Art</a></li>
+    <li><a href="nivadesign.html">Nivådesign</a></li>
+    <li><a href="karak.html">Karaktärsdesign</a></li>
+    <li><a href="verktyg.html">Verktyg</a></li>
+    <li><a href="resurser.html">Resurser</a></li>
+</div>
+
+<div id="main">
+    <div class="container">
+        <h1>Pixel Art och Design</h1>
+
+        <!-- Sektion 1: Pixel Art Tekniker -->
+        <div class="section">
+            <h2>Pixel Art</h2>
+            <div class="progress-bar" id="progress1"></div>
+            <br>
+            <form id="section1">
+                <label><input type="checkbox" class="checkbox" onclick="updateProgress('section1', 'progress1')"> <b>Välj ett Verktyg:</b> <br>Använd ett program som Aseprite, Photoshop eller använd gratis hemsidan pixelart för att skapa din pixel art.</label><br>
+                <img src="PixelArt.png" alt="VyPåPixelartVerktyg">
+                <p><a href="https://www.pixilart.com/draw/devil-broforce-9dc1d9f3093acc0" target="_blank">(Klicka här om du vill komma till pixelart)</a></p>
+                <br>
+                <label><input type="checkbox" class="checkbox" onclick="updateProgress('section1', 'progress1')"> <b>Skapa en Skiss:</b> <br> Börja med en grov skiss av din design. Använd enkla former för att blocka ut din karaktär eller objekt.</label><br>
+                <br>
+                <img src="BroforceSkiss.png" alt="Skiss">
+                <label><input type="checkbox" class="checkbox" onclick="updateProgress('section1', 'progress1')"> <b>Lägg till Detaljer (frivilligt):</b> <br>Fyll i din skiss med detaljer, använd små pixelsteg för precision. Var noga med att hålla ditt pixel art stiliserat och enkelt.</label><br>
+                <br>
+                <label><input type="checkbox" class="checkbox" onclick="updateProgress('section1', 'progress1')"> <b>Färgläggning:</b> <br>Välj en begränsad färgpalett för att hålla enhetligheten. Använd skuggor och högdagrar för att ge djup och dimension.</label>
+                <img src="FargPallet.png" alt="FärgPallet">
+            </form>
+            <h2>Åvanför använde jag en hemsida som heter Colors.co där de har en enorm mäng färg palleter som man kan använda.</h2>
+            <p><a href="https://coolors.co/palettes/trending" target="_blank">(Klicka här om du vill hitta några av coola färger)</a></p>
+        </div>
+
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <p>Ansvarig utgivare: Kacper Ertmanski</p>
+            <p>Senast uppdaterad: 2024-05</p>
+            <p>E-mail: 05kacert@skola.boras.se</p>
+        </div>
+    </div>
+</footer>
+
+
+<script src="historia.js"></script>
+<script src="index2.js"></script>
+<script src="speldesign.js"></script>
+</body>
+</html>
