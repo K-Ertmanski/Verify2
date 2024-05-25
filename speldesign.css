@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Styl för labels */
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Style för images */
+form img {
+    display: block;
+    max-width: 100%; 
+    height: auto; 
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+
+.container {
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    width: 100%;
+    box-sizing: border-box;
+    background: #0096C7;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 1em auto;
+}
+
+label {
+    color: #ADE8F4; /* Text color */
+}
+
+.section {
+    margin-bottom: 1em;
+}
+
+.progress-bar {
+    height: 20px;
+    background: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.progress-bar-inner {
+    height: 100%;
+    background: #48CAE4;
+    width: 0;
+    transition: width 0.4s ease;
+}
+
+.checkbox {
+    margin-bottom: 10px;
+}
+
+.footer {
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    position: relative; /* Position relative */
+    clear: both; /* linje */
+}
+
+.footer .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-content {
+    text-align: center;
+}

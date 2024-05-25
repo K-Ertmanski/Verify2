@@ -1,0 +1,90 @@
+/* Befintlig CSS */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.gallery-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #0096C7;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery-item {
+    flex: 1 1 21%;
+    margin: 10px;
+    position: relative;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+
+.expanded-container {
+    display: none;
+    position: relative;
+    margin-top: 20px;
+}
+
+.closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    padding: 0 10px;
+}
+
+#expandedImg {
+    width: 100%;
+    border-radius: 10px;
+}
+
+#imgtext {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+/* CSS för video section */
+.video-section {
+    background-color: #0096C7;
+    padding: 20px;
+    text-align: center;
+    align-self: center;
+    color: white;
+    width: 90%;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+}
+
+video {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+}
