@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speldesign - Retro-Artisan</title>
+    <link rel="stylesheet" href="index.css"> <!-- Link till index stylesheet -->
+    <link rel="stylesheet" href="sidebar.css"> <!-- Link till sidebar stylesheet -->
+    <link rel="stylesheet" href="carousel.css"> <!-- Link till carousel stylsheet -->
+    <link rel="stylesheet" href="historia.css"> <!-- Link till carousel stylsheet -->
+    <link rel="stylesheet" href="speldesign.css"> <!-- Link till speldesign stylesheet -->
+    <link rel="icon" href="Icon.png" type="image/png"> <!-- Link till PNG favicon -->
+</head>
+<body>
+
+<div class="banner">
+    <img src="RetroArtisanBaner.png" alt="RETRO ARTISAN Baner Logo med Capybara">
+</div>
+
+<ul class="navbar">
+    <li><button class="openbtn" onclick="openNav()">☰ Meny</button></li>
+    <li><a href="index.html">Hem</a></li>
+    <li><a href="historia.html">Historia</a></li>
+    <li><a href="tekniker.html">Pixel Art Tekniker</a></li>
+    <li><a href="pixelArt.html">Pixel Art</a></li>
+    <li><a href="nivadesign.html">Nivådesign</a></li>
+    <li><a class="active" href="karak.html">Karaktärsdesign</a></li>
+    <li><a href="verktyg.html">Verktyg</a></li>
+    <li><a href="resurser.html">Resurser</a></li>
+</ul>
+
+<div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <ul>
+        <li><a href="index.html">Hem</a></li>
+        <li><a href="historia.html">Historia</a></li>
+        <li><a href="tekniker.html">Pixel Art Tekniker</a></li>
+        <li><a href="pixelArt.html">Pixel Art</a></li>
+        <li><a href="nivadesign.html">Nivådesign</a></li>
+        <li><a href="karak.html">Karaktärsdesign</a></li>
+        <li><a href="verktyg.html">Verktyg</a></li>
+        <li><a href="resurser.html">Resurser</a></li>
+    </ul>
+</div>
+
+<div id="main">
+    <div class="container">
+        <h1>Karaktärsdesign</h1>
+
+        <!-- Sektion 3: Karaktärsdesign -->
+        <div class="section">
+            <h2>Karaktärsdesign</h2>
+            <div class="progress-bar" id="progress3"></div>
+            <br>
+            <form id="section3">
+                <label><input type="checkbox" class="checkbox" onclick="updateProgress('section3', 'progress3')"> <b>Skapa en Silhuett:</b> <br>Börja med att skapa en tydlig silhuett för din karaktär. Detta hjälper till att identifiera karaktären även på avstånd.</label><br>
+                <br>
+                <img src="BroforceSketch1.png" alt="Skiss">
+                <label><input type="checkbox" class="checkbox" onclick="updateProgress('section3', 'progress3')"> <b>Lägg till Detaljer:</b> <br>Lägg till ansiktsdrag, kläder och andra detaljer som gör karaktären unik. Använd starka konturer för att framhäva viktiga delar.</label><br>
+                <br>
+                <img src="BroforceSketch2.png" alt="Skiss">
+                <label><input type="checkbox" class="checkbox" onclick="updateProgress('section3', 'progress3')"> <b>Animering:</b> <br>Skapa flera frames för att animera rörelser som gång, hopp och attack. Håll animationerna flytande och konsekventa.</label>
+            </form>
+        </div>
+
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <p>Ansvarig utgivare: Kacper Ertmanski</p>
+            <p>Senast uppdaterad: 2024-05</p>
+            <p>E-mail: 05kacert@skola.boras.se</p>
+        </div>
+    </div>
+</footer>
+
+<script src="historia.js"></script>
+<script src="index2.js"></script>
+<script src="speldesign.js"></script>
+</body>
+</html>

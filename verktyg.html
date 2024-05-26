@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verktyg för Pixel Art - Retro-Artisan</title>
+    <link rel="stylesheet" href="index.css"> <!-- Link till main stylesheet -->
+    <link rel="stylesheet" href="sidebar.css"> <!-- Link till sidebar stylesheet -->
+    <link rel="stylesheet" href="verktyg.css"> <!-- Link till verktyg stylesheet -->
+    <link rel="icon" href="Icon.png" type="image/png"> <!-- Link till PNG favicon -->
+</head>
+<body>
+
+<div class="banner">
+    <img src="RetroArtisanBaner.png" alt="RETRO ARTISAN Baner Logo med Capybara">
+</div>
+
+<ul class="navbar">
+    <li><button class="openbtn" onclick="openNav()">☰ Meny</button></li>
+    <li><a href="index.html">Hem</a></li>
+    <li><a href="historia.html">Historia</a></li>
+    <li><a href="tekniker.html">Pixel Art Tekniker</a></li>
+    <li><a href="pixelArt.html">Pixel Art</a></li>
+    <li><a href="nivadesign.html">Nivådesign</a></li>
+    <li><a href="karak.html">Karaktärsdesign</a></li>
+    <li><a class="active" href="verktyg.html">Verktyg</a></li>
+    <li><a href="resurser.html">Resurser</a></li>
+</ul>
+
+<div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <ul>
+        <li><a href="index.html">Hem</a></li>
+        <li><a href="historia.html">Historia</a></li>
+        <li><a href="tekniker.html">Pixel Art Tekniker</a></li>
+        <li><a href="pixelArt.html">Pixel Art</a></li>
+        <li><a href="nivadesign.html">Nivådesign</a></li>
+        <li><a href="karak.html">Karaktärsdesign</a></li>
+        <li><a href="verktyg.html">Verktyg</a></li>
+        <li><a href="resurser.html">Resurser</a></li>
+    </ul>
+</div>
+
+<div id="main">
+    <div class="container">
+        <h1>Lista av verktyg för Pixel Art som du kan använda:</h1>
+
+        <div class="section2">
+            <h2>Digitala Verktyg</h2>
+            <form id="digitalToolsForm">
+                <label><input type="checkbox" class="checkbox" onclick="updateProgress('digitalToolsForm', 'progressDigital')"> Aseprite</label><br>
+                <label><input type="checkbox" class="checkbox" onclick="updateProgress('digitalToolsForm', 'progressDigital')"> Photoshop</label><br>
+                <label><input type="checkbox" class="checkbox" onclick="updateProgress('digitalToolsForm', 'progressDigital')"> GIMP</label><br>
+                <label><input type="checkbox" class="checkbox" onclick="updateProgress('digitalToolsForm', 'progressDigital')"> Krita</label><br>
+                <label><input type="checkbox" class="checkbox" onclick="updateProgress('digitalToolsForm', 'progressDigital')"> Pixilart</label><br>
+                <label><input type="checkbox" class="checkbox" onclick="updateProgress('digitalToolsForm', 'progressDigital')"> Piskel</label>
+            </form>
+            <div class="progress-bar" id="progressDigital"></div>
+            <br>
+        
+            <div class="video-section">
+                <h2>Introduktionsvideo för hur du kan börja.</h2>
+                <div class="video-container">
+                    <video controls>
+                        <source src="instruktionV4.mp4" type="video/mp4">
+                        Din webläsare stödjer inte video tagen.
+                    </video>
+                </div>
+                <br>
+            </div>
+        
+            <h2>Verktyg för Verkliga Livet</h2>
+            <form id="realLifeToolsForm">
+                <label><input type="checkbox" class="checkbox" onclick="updateProgress('realLifeToolsForm', 'progressRealLife')"> Papper</label><br>
+                <label><input type="checkbox" class="checkbox" onclick="updateProgress('realLifeToolsForm', 'progressRealLife')"> Pennor</label><br>
+                <label><input type="checkbox" class="checkbox" onclick="updateProgress('realLifeToolsForm', 'progressRealLife')"> Suddgummi</label><br>
+                <label><input type="checkbox" class="checkbox" onclick="updateProgress('realLifeToolsForm', 'progressRealLife')"> Linjal</label><br>
+                <label><input type="checkbox" class="checkbox" onclick="updateProgress('realLifeToolsForm', 'progressRealLife')"> Färgpennor</label><br>
+                <label><input type="checkbox" class="checkbox" onclick="updateProgress('realLifeToolsForm', 'progressRealLife')"> Skissblock</label>
+            </form>
+            <div class="progress-bar" id="progressRealLife"></div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <p>Ansvarig utgivare: Kacper Ertmanski</p>
+            <p>Senast uppdaterad: 2024-05</p>
+            <p>E-mail: 05kacert@skola.boras.se</p>
+        </div>
+    </div>
+</footer>
+
+<script src="index2.js"></script>
+<script src="verktyg.js"></script>
+</body>
+</html>

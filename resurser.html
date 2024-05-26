@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resurser - Retro-Artisan</title>
+    <link rel="stylesheet" href="index.css"> <!-- Link till main stylesheet -->
+    <link rel="stylesheet" href="sidebar.css"> <!-- Link till sidebar stylesheet -->
+    <link rel="stylesheet" href="resurser.css"> <!-- Link till resurser stylesheet -->
+    <link rel="icon" href="Icon.png" type="image/png"> <!-- Link till PNG favicon -->
+</head>
+<body>
+
+<div class="banner">
+    <img src="RetroArtisanBaner.png" alt="RETRO ARTISAN Baner Logo med Capybara">
+</div>
+
+<ul class="navbar">
+    <li><button class="openbtn" onclick="openNav()">☰ Meny</button></li>
+    <li><a href="index.html">Hem</a></li>
+    <li><a href="historia.html">Historia</a></li>
+    <li><a href="tekniker.html">Pixel Art Tekniker</a></li>
+    <li><a href="pixelArt.html">Pixel Art</a></li>
+    <li><a href="nivadesign.html">Nivådesign</a></li>
+    <li><a href="karak.html">Karaktärsdesign</a></li>
+    <li><a href="verktyg.html">Verktyg</a></li>
+    <li><a class="active" href="resurser.html">Resurser</a></li>
+</ul>
+
+<div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <ul> <!-- Lägg till denna lista -->
+        <li><a href="index.html">Hem</a></li>
+        <li><a href="historia.html">Historia</a></li>
+        <li><a href="tekniker.html">Pixel Art Tekniker</a></li>
+        <li><a href="pixelArt.html">Pixel Art</a></li>
+        <li><a href="nivadesign.html">Nivådesign</a></li>
+        <li><a href="karak.html">Karaktärsdesign</a></li>
+        <li><a href="verktyg.html">Verktyg</a></li>
+        <li><a href="resurser.html">Resurser</a></li>
+    </ul>
+</div>
+
+<div id="main">
+    <div class="container">
+        <h1>Resurser och Copyright</h1>
+        <p>Allt material på denna webbplats, inklusive men inte begränsat till bilder, videor och text, är skyddat av upphovsrättslagar. Alla bilder och videor som visas på denna webbplats ägs av Retro-Artisan, om inte annat anges. Obehörig användning av detta material är förbjudet utan uttryckligt skriftligt medgivande från ägaren.</p>
+    </div>
+
+    <!-- Image Gallery -->
+    <div class="gallery-container">
+        <h2>Bildgalleri</h2>
+        <div class="gallery" id="gallery"></div>
+        <div class="expanded-container">
+            <span onclick="closeExpandedImage()" class="closebtn">&times;</span>
+            <img id="expandedImg" src="placeholder.jpg" alt="Bildgalleri" style="width:100%"> <!-- Lägg till en src -->
+            <div id="imgtext"></div>
+        </div>
+    </div>
+
+    <!-- Video Section -->
+    <div class="container">
+        <h2>Introduktionsvideo</h2>
+        <div class="container">
+            <video controls>
+                <source src="instruktionV4.mp4" type="video/mp4">
+                Din webbläsare stödjer inte video taggen.
+            </video>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <p>Ansvarig utgivare: Kacper Ertmanski</p>
+            <p>Senast uppdaterad: 2024-05</p>
+            <p>E-mail: 05kacert@skola.boras.se</p>
+        </div>
+    </div>
+</footer>
+
+<script src="index2.js"></script>
+<script src="resurser.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const images = [
+            'BroforceArt.png', 'BroforceEdit1.png', 'BroforceEdit2.png', 
+            'BroforceEdit3.png', 'BroforceMeny.png', 'BroforceSketch1.png', 
+            'PixelArt.png', 'BroforceSkiss.png', 'FargPallet.png', 'PixelArtVerktyg.png', 
+            'SkisarForPixel.png'
+        ];
+
+        const gallery = document.getElementById('gallery');
+        images.forEach(image => {
+            const galleryItem = document.createElement('div');
+            galleryItem.className = 'gallery-item';
+            const img = document.createElement('img');
+            img.src = image;
+            img.alt = image;
+            img.onclick = () => expandImage(img);
+            galleryItem.appendChild(img);
+            gallery.appendChild(galleryItem);
+        });
+    });
+
+    function expandImage(img) {
+        const expandedImg = document.getElementById('expandedImg');
+        const imgText = document.getElementById('imgtext');
+        expandedImg.src = img.src;
+        imgText.innerHTML = img.alt;
+        expandedImg.parentElement.style.display = 'block';
+    }
+
+    function closeExpandedImage() {
+        const expandedContainer = document.querySelector('.expanded-container');
+        expandedContainer.style.display = 'none';
+    }
+</script>
+</body>
+</html>

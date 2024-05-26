@@ -4,39 +4,120 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Retro-Artisan</title>
-    <link rel="stylesheet" href="index.css"> <!-- Inkludera din CSS-fil -->
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="sidebar.css">
+    <link rel="stylesheet" href="carousel.css">
+    <link rel="stylesheet" href="historia.css">
+    <link rel="stylesheet" href="speldesign.css">
+    <link rel="icon" href="Icon.png" type="image/png">
 </head>
 <body>
 
-    <header>
-        
-        <img src="images/RetroArtisanBaner.png" alt="Baner med text Retro artisan med en capybara som kollar på den">
-        
-        <h1>Retro-Artisan</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Startsida</a></li>
-                <li><a href="about.html">Om oss</a></li>
-                <li><a href="tutorials.html">Handledningar</a></li>
-                <li><a href="gallery.html">Galleri</a></li>
-                <li><a href="resources.html">Resurser</a></li>
-                <li><a href="contact.html">Kontakt</a></li>
-            </ul>
-        </nav>
-    </header>
+<div class="banner">
+    <img src="RetroArtisanBaner.png" alt="RETRO ARTISAN Baner Logo med Capybara">
+</div>
 
-    <section id="intro">
-        <h2>Välkommen till Retro-Artisan</h2>
-        <p>Här skriver du inledningstexten om varför du har skapat sidan, syftet, målen och målgruppen för webbplatsen.</p>
-    </section>
+<ul class="navbar">
+    <li><button class="openbtn" onclick="openNav()">☰ Meny</button></li>
+    <li><a class="active" href="index.html">Hem</a></li>
+    <li><a href="historia.html">Historia</a></li>
+    <li><a href="tekniker.html">Pixel Art Tekniker</a></li>
+    <li><a href="pixelArt.html">Pixel Art</a></li>
+    <li><a href="nivadesign.html">Nivådesign</a></li>
+    <li><a href="karak.html">Karaktärsdesign</a></li>
+    <li><a href="verktyg.html">Verktyg</a></li>
+    <li><a href="resurser.html">Resurser</a></li>
+</ul>
 
-    <!-- Andra sektioner kan läggas till här -->
+<div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <ul>
+        <li><a href="index.html">Hem</a></li>
+        <li><a href="historia.html">Historia</a></li>
+        <li><a href="tekniker.html">Pixel Art Tekniker</a></li>
+        <li><a href="pixelArt.html">Pixel Art</a></li>
+        <li><a href="nivadesign.html">Nivådesign</a></li>
+        <li><a href="karak.html">Karaktärsdesign</a></li>
+        <li><a href="verktyg.html">Verktyg</a></li>
+        <li><a href="resurser.html">Resurser</a></li>
+    </ul>
+</div>
 
-    <footer>
-        <p>Ansvarig utgivare: Kacper Ertmanski | Senast uppdaterad: 2024-05-10 | E-post: ertmanskikacper@gmail.com</p>
-        <p>&copy; 2024 Retro-Artisan. Alla rättigheter förbehållna.</p>
-    </footer>
+<div id="main">
+    <div class="container">
+        <h2>Välkommen till Retro-Artisan – din resurs för pixel art!</h2>
+        <p>Vi är glada att du har hittat hit och vi vill ta tillfället i akt att förklara varför denna sida existerar och vad du kan förvänta dig här.</p>
+        <br>
 
-    <script src="script.js"></script> <!-- Inkludera din JavaScript-fil -->
+        <div class="inner-container" id="innerContainer">
+            <a href="#Varför?" onclick="toggleParagraph()">Varför just denna sida? Läs mer!</a>
+            <div id="paragraph" class="hidden">
+                <p>Retro-Artisan föddes som ett skolprojekt, med ambitionen att inte bara berätta om pixel art utan också att erbjuda en plattform som hjälper och ger instruktioner för alla som är intresserade av detta fascinerande ämne.</p>
+                <p>Vårt syfte är att utbilda och inspirera både nybörjare och erfarna pixelkonstnärer genom att erbjuda en djupgående titt på pixelkonstens värld och dess tillämpning i spelutveckling.</p>
+                <p>Vårt mål är att nå en bred målgrupp som inkluderar spelare, konstnärer, designers och alla som delar vårt intresse för 2D-grafik och pixel art.</p>
+            </div>
+        </div>
+
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <div class="slide-content">
+                    <img src="BroforceArt.png" alt="Pixel konst från spelet Broforce">
+                    <div class="text">Pixel konst från spelet Broforce</div>
+                </div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <div class="slide-content">
+                    <img src="SkisarForPixel.png" alt="Förbredande skissar">
+                    <div class="text">Förbredande skissar</div>
+                </div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <div class="slide-content">
+                    <img src="PixelArtVerktyg.png" alt="Verktyg För PixelArt">
+                    <div class="text">Verktyget för att få sina ider till verklighet</div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <div style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+        </div>
+        <br>
+
+        <div class="inner-container" id="innerContainer2">
+            <a href="#Vad?" onclick="togglePopup()">Vad kan du förvänta dig? Läs mer!</a>
+            <div id="popupContent" class="hidden">
+                <p>På Retro-Artisan hittar du allt från introduktioner till avancerade tekniker inom pixel art till fördjupade analyser av spel som Broforce, som använder pixel art som sin huvudsakliga estetik.</p>
+                <p>Vi strävar efter att erbjuda omfattande resurser och praktiska handledningar för att hjälpa dig att vässa dina färdigheter och utforska ditt kreativa uttryck.</p>
+                <p>Dessutom är vi stolta över att erbjuda allt detta på ett etiskt och lagligt sätt, med respekt för upphovsrätten och användarintegriteten.</p>
+            </div>
+        </div>
+
+        <br>
+
+        <div>
+            <h2>Här är ett formulär som du kan fylla i efter dagens kurser!</h2>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeNSMFcmt2GaVTdeDPcXxn1SUr-kRb54n57hp89gAqrD6GwZQ/viewform?usp=sf_link" width="640" height="1048" style="border: none; margin: 0;"></iframe>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <p>Ansvarig utgivare: Kacper Ertmanski</p>
+            <p>Senast uppdaterad: 2024-05</p>
+            <p>E-mail: 05kacert@skola.boras.se</p>
+        </div>
+    </div>
+</footer>
+
+<script src="index.js"></script>
 </body>
 </html>
