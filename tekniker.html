@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="carousel.css"> <!-- Link till carousel stylsheet -->
     <link rel="stylesheet" href="historia.css"> <!-- Länk till extern CSS-fil -->
     <link rel="icon" href="Icon.png" type="image/png"> <!-- Link till PNG favicon -->
-
 </head>
 <body>
 
@@ -18,7 +17,7 @@
 </div>
 
 <ul class="navbar">
-<li><button class="openbtn" onclick="openNav()">☰ Meny</button></li>
+    <li><button class="openbtn" onclick="openNav()">☰ Meny</button></li>
     <li><a href="index.html">Hem</a></li>
     <li><a href="historia.html">Historia</a></li>
     <li><a class="active" href="tekniker.html">Pixel Art Tekniker</a></li>
@@ -31,38 +30,35 @@
 
 <div id="mySidebar" class="sidebar">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-    <li><a href="index.html">Hem</a></li>
-    <li><a href="historia.html">Historia</a></li>
-    <li><a href="tekniker.html">Pixel Art Tekniker</a></li>
-    <li><a href="pixelArt.html">Pixel Art</a></li>
-    <li><a href="nivadesign.html">Nivådesign</a></li>
-    <li><a href="karak.html">Karaktärsdesign</a></li>
-    <li><a href="verktyg.html">Verktyg</a></li>
-    <li><a href="resurser.html">Resurser</a></li>
+    <ul>
+        <li><a href="index.html">Hem</a></li>
+        <li><a href="historia.html">Historia</a></li>
+        <li><a href="tekniker.html">Pixel Art Tekniker</a></li>
+        <li><a href="pixelArt.html">Pixel Art</a></li>
+        <li><a href="nivadesign.html">Nivådesign</a></li>
+        <li><a href="karak.html">Karaktärsdesign</a></li>
+        <li><a href="verktyg.html">Verktyg</a></li>
+        <li><a href="resurser.html">Resurser</a></li>
+    </ul>
 </div> 
 <div id="main">
-     
-
     <div class="container">
         <h2>Utforska Pixel Artens Värld</h2>
-
         <p>Välkommen till Pixel Art Tekniker-sektionen! Här kommer du att lära dig om olika tekniker för att skapa fantastiska 2D pixel art-bilder.<br>Vi kommer att gå igenom grundläggande tekniker samt ge dig tips och tricks för att ta din pixelkonst till nästa nivå.</p>
-
         <br>
 
         <div class="inner-container" id="innerContainer">
             <a href="#Varför?" onclick="toggleParagraph()">Grundläggande Pixel Art Tekniker</a>
             <div id="paragraph" class="hidden">
                 <ol>
-                    <li>Pikselering: Lär dig grunderna i att skapa pixelerade bilder genom att arbeta med individuella pixlar för att skapa detaljerade och realistiska bilder.</p></li>
-                    <li>Färgpaletter: Utforska olika färgpaletter och hur de kan påverka utseendet på din pixelkonst. Lär dig att välja rätt färger för att skapa kontrast, djup och dimension.</p></li>
-                    <li>Antialiasing: Upptäck tekniken för antialiasing, som används för att göra kanterna på dina pixelbilder mjukare och mer naturliga.</p></li>
+                    <li>Pikselering: Lär dig grunderna i att skapa pixelerade bilder genom att arbeta med individuella pixlar för att skapa detaljerade och realistiska bilder.</li>
+                    <li>Färgpaletter: Utforska olika färgpaletter och hur de kan påverka utseendet på din pixelkonst. Lär dig att välja rätt färger för att skapa kontrast, djup och dimension.</li>
+                    <li>Antialiasing: Upptäck tekniken för antialiasing, som används för att göra kanterna på dina pixelbilder mjukare och mer naturliga.</li>
                 </ol> 
             </div>
         </div>
 
         <div class="slideshow-container">
-
             <div class="mySlides fade">
                 <div class="numbertext">1 / 3</div>
                 <div class="slide-content">
@@ -86,16 +82,15 @@
                     <div class="text">Verktyget för att få sina ider till verklighet</div>
                 </div>
             </div>
-
         </div>
 
         <br>
 
-            <div style="text-align:center">
-                <span class="dot"></span> 
-                <span class="dot"></span> 
-                <span class="dot"></span> 
-            </div>
+        <div style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+        </div>
         
         <br>
 
@@ -103,15 +98,15 @@
             <a href="#Vad?" onclick="togglePopup()">Avancerade Pixel Art Tekniker</a>
             <div id="popupContent" class="hidden">
                 <ol>
-                    <li>Shading och Ljus: Lär dig att använda skuggor och ljus för att ge din pixelkonst djup och dimension. Utforska olika tekniker för att skapa realistiska ljuseffekter och skuggor.</p></li>
-                    <li>Texturering: Upptäck hur du kan använda texturering för att ge din pixelkonst en känsla av yta och struktur. Lär dig att skapa olika typer av texturer, från trä och sten till metall och tyg.</p></li>
-                    <li>Animation: Ta din pixelkonst till liv genom att lära dig grunderna i animation. Utforska olika animationsmetoder och skapa enkla animerade sekvenser för att ge liv åt dina bilder.</p></li>
+                    <li>Shading och Ljus: Lär dig att använda skuggor och ljus för att ge din pixelkonst djup och dimension. Utforska olika tekniker för att skapa realistiska ljuseffekter och skuggor.</li>
+                    <li>Texturering: Upptäck hur du kan använda texturering för att ge din pixelkonst en känsla av yta och struktur. Lär dig att skapa olika typer av texturer, från trä och sten till metall och tyg.</li>
+                    <li>Animation: Ta din pixelkonst till liv genom att lära dig grunderna i animation. Utforska olika animationsmetoder och skapa enkla animerade sekvenser för att ge liv åt dina bilder.</li>
                 </ol> 
             </div>
         </div>
 
         <div class="collapsible-container" id="collapsible1">
-            <button class="close-btn" onclick="confirmDeletion('collapsible1')">x</but>
+            <button class="close-btn" onclick="confirmDeletion('collapsible1')">x</button>
             <button class="confirm-btn" onclick="deleteDiv('collapsible1')">x</button>
             <h2>Tips och Tricks</h2>
             <p>Planera din design: Innan du börjar skapa din pixelkonst, ta dig tid att planera din design och skissa ut dina idéer. Detta hjälper dig att arbeta mer effektivt och undvika onödiga korrigeringar senare.</p>
@@ -120,11 +115,7 @@
             <br>
             <p><b>Kom ihåg att övning ger färdighet, så ha tålamod och ha roligt med din pixelkonstskapande resa!</b></p>
         </div>
-
-        
-
     </div>
-        
 </div>
 
 <footer class="footer">

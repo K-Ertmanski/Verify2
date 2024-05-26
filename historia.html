@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Historia - Retro-Artisan</title>
     <link rel="stylesheet" href="index.css"> <!-- Link till main stylesheet -->
     <link rel="stylesheet" href="sidebar.css"> <!-- Link till sidebar stylesheet -->
-    <link rel="stylesheet" href="carousel.css"> <!-- Link till carousel stylsheet -->
+    <link rel="stylesheet" href="carousel.css"> <!-- Link till carousel stylesheet -->
     <link rel="stylesheet" href="historia.css"> <!-- Länk till extern CSS-fil -->
     <link rel="icon" href="Icon.png" type="image/png"> <!-- Link till PNG favicon -->
 </head>
@@ -17,7 +17,7 @@
 </div>
 
 <ul class="navbar">
-<li><button class="openbtn" onclick="openNav()">☰ Meny</button></li>
+    <li><button class="openbtn" onclick="openNav()">☰ Meny</button></li>
     <li><a href="index.html">Hem</a></li>
     <li><a class="active" href="historia.html">Historia</a></li>
     <li><a href="tekniker.html">Pixel Art Tekniker</a></li>
@@ -30,36 +30,33 @@
 
 <div id="mySidebar" class="sidebar">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-    <li><a href="index.html">Hem</a></li>
-    <li><a href="historia.html">Historia</a></li>
-    <li><a href="tekniker.html">Pixel Art Tekniker</a></li>
-    <li><a href="pixelArt.html">Pixel Art</a></li>
-    <li><a href="nivadesign.html">Nivådesign</a></li>
-    <li><a href="karak.html">Karaktärsdesign</a></li>
-    <li><a href="verktyg.html">Verktyg</a></li>
-    <li><a href="resurser.html">Resurser</a></li>
+    <ul>
+        <li><a href="index.html">Hem</a></li>
+        <li><a href="historia.html">Historia</a></li>
+        <li><a href="tekniker.html">Pixel Art Tekniker</a></li>
+        <li><a href="pixelArt.html">Pixel Art</a></li>
+        <li><a href="nivadesign.html">Nivådesign</a></li>
+        <li><a href="karak.html">Karaktärsdesign</a></li>
+        <li><a href="verktyg.html">Verktyg</a></li>
+        <li><a href="resurser.html">Resurser</a></li>
+    </ul>
 </div>
 
 <div id="main">
-
 
     <!-- inkludera HTML-kod för historia divarna -->
 
     <div class="collapsible-container" id="collapsible1">
         <button class="close-btn" onclick="confirmDeletion('collapsible1')">x</button>
         <button class="confirm-btn" onclick="deleteDiv('collapsible1')">x</button>
-
         <h2>Lär dig backgrunden!</h2>
-
         <p>För att bättre förstå pixel art måste du lära dig bakgrunden.</p>
-
     </div>
     
     <div class="collapsible-container" id="collapsible2">
         <button class="close-btn" onclick="confirmDeletion('collapsible2')">x</button>
         <button class="confirm-btn" onclick="deleteDiv('collapsible2')">x</button>
         <h2>Utveckling</h2>
-
         <p>Broforce utvecklades av den sydafrikanska spelutvecklaren Free Lives. Utvecklingen av spelet började som ett litet projekt av en grupp passionerade spelutvecklare. Spelets idé var att skapa en actionfylld plattformsspel med influenser från klassiska actionfilmer och spel från 1980- och 1990-talen. Free Lives ville skapa ett spel som var både roligt och nostalgiskt, med en stark känsla av kamratskap och överdriven action.</p>
         <p>Spelets utveckling tog fart efter att en tidig version av spelet, kallad "Brototype," släpptes som en gratis webbaserad prototyp. Denna tidiga version fick mycket positiv feedback från spelare, vilket motiverade Free Lives att fortsätta utveckla spelet och göra det till en fullständig kommersiell produkt.</p>
     </div>
@@ -67,45 +64,33 @@
     <div class="collapsible-container" id="collapsible3">
         <button class="close-btn" onclick="confirmDeletion('collapsible3')">x</button>
         <button class="confirm-btn" onclick="deleteDiv('collapsible3')">x</button>
-
         <h2>Lansering</h2>
-
         <p>Broforce släpptes officiellt den 15 oktober 2015 för Windows, OS X och Linux, och senare för PlayStation 4 och Nintendo Switch.</p>
         <p>Innan den fullständiga lanseringen var spelet tillgängligt i "Early Access" på Steam, vilket innebar att spelare kunde köpa och spela en ofärdig version av spelet medan det fortfarande var under utveckling.</p>
         <p>Detta gav utvecklarna möjlighet att samla in feedback från spelare och göra förbättringar innan den slutliga lanseringen.</p>
-
     </div>
 
     <div class="collapsible-container" id="collapsible4">
         <button class="close-btn" onclick="confirmDeletion('collapsible4')">x</button>
         <button class="confirm-btn" onclick="deleteDiv('collapsible4')">x</button>
-
         <h2>Mottagande</h2>
-
         <p>Broforce mottogs mycket positivt av både spelare och kritiker. Spelet hyllades för sin humor, intensiva gameplay och kreativa användning av pixel art. Kritiker uppskattade också spelets hänvisningar till klassiska actionfilmer och dess kaotiska, men underhållande, flerspelarläge.</p>
         <p>Spelet fick flera utmärkelser och nomineringar, inklusive priset för "Excellence in Design" vid Independent Games Festival 2015. Spelare gillade särskilt spelets överdrivna action och de många karaktärerna, kända som "bros", som var baserade på ikoner från actionfilmer.</p>
-        
     </div>
 
     <div class="collapsible-container" id="collapsible5">
         <button class="close-btn" onclick="confirmDeletion('collapsible5')">x</button>
         <button class="confirm-btn" onclick="deleteDiv('collapsible5')">x</button>
-
         <h2>Användning av Pixel Art</h2>
-
         <p>Pixel art var en central del av Broforces design och bidrog starkt till spelets estetik och charm. Genom att använda pixel art kunde utvecklarna skapa en nostalgisk atmosfär som påminde om klassiska plattformsspel från 8-bitars och 16-bitars eran. Pixel art-stilen passade också bra med spelets överdrivna och komiska ton, vilket gjorde att spelet kändes både retro och modernt.</p>
         <p>Pixel art gjorde det också möjligt för utvecklarna att skapa detaljerade och uttrycksfulla karaktärer och miljöer med relativt enkla grafiska medel. Varje "bro" hade unika utseenden och animationer som speglade deras inspiration från actionfilmer, vilket lade till ett lager av humor och igenkänning för spelarna.</p>
-        
     </div>
 
     <div class="collapsible-container" id="collapsible6">
         <button class="close-btn" onclick="confirmDeletion('collapsible6')">x</button>
         <button class="confirm-btn" onclick="deleteDiv('collapsible6')">x</button>
-
         <h2>Sammanfattning</h2>
-
         <p>Broforce är ett spel som kombinerar nostalgi och modern spelutveckling på ett framgångsrikt sätt. Genom sin utveckling, lansering och mottagande har spelet visat sig vara både en kritikerrosad och älskad titel bland spelare. Pixel art-stilen har spelat en stor roll i spelets estetik och charm, vilket har bidragit till dess framgång och popularitet.</p>
-        
     </div>
 
 </div>

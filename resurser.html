@@ -29,14 +29,16 @@
 
 <div id="mySidebar" class="sidebar">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-    <li><a href="index.html">Hem</a></li>
-    <li><a href="historia.html">Historia</a></li>
-    <li><a href="tekniker.html">Pixel Art Tekniker</a></li>
-    <li><a href="pixelArt.html">Pixel Art</a></li>
-    <li><a href="nivadesign.html">Nivådesign</a></li>
-    <li><a href="karak.html">Karaktärsdesign</a></li>
-    <li><a href="verktyg.html">Verktyg</a></li>
-    <li><a href="resurser.html">Resurser</a></li>
+    <ul> <!-- Lägg till denna lista -->
+        <li><a href="index.html">Hem</a></li>
+        <li><a href="historia.html">Historia</a></li>
+        <li><a href="tekniker.html">Pixel Art Tekniker</a></li>
+        <li><a href="pixelArt.html">Pixel Art</a></li>
+        <li><a href="nivadesign.html">Nivådesign</a></li>
+        <li><a href="karak.html">Karaktärsdesign</a></li>
+        <li><a href="verktyg.html">Verktyg</a></li>
+        <li><a href="resurser.html">Resurser</a></li>
+    </ul>
 </div>
 
 <div id="main">
@@ -51,13 +53,13 @@
         <div class="gallery" id="gallery"></div>
         <div class="expanded-container">
             <span onclick="closeExpandedImage()" class="closebtn">&times;</span>
-            <img id="expandedImg" style="width:100%">
+            <img id="expandedImg" src="placeholder.jpg" alt="Bildgalleri" style="width:100%"> <!-- Lägg till en src -->
             <div id="imgtext"></div>
         </div>
     </div>
 
     <!-- Video Section -->
-    <div class="conatainer">
+    <div class="container">
         <h2>Introduktionsvideo</h2>
         <div class="container">
             <video controls>
